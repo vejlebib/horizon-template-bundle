@@ -44,7 +44,7 @@
     {
       "name": "Logo",
       "id": "logo-editor",
-      "template": "bundles/os2displayhorizontemplate/apps/toolsModule/fixed-logo-editor.html"
+      "template": "bundles/os2displaydefaulttemplate/apps/toolsModule/fixed-logo-editor.html"
     }
   ]
 }
