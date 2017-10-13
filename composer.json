@@ -1,0 +1,13 @@
+{
+    "name": "os2display/horizon-template-bundle",
+    "description": "Os2Display Horizon templates",
+    "type": "symfony-bundle",
+    "require": {
+        "os2display/admin-bundle": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Os2Display\\HorizonTemplateBundle\\": ""
+        }
+    }
+}
