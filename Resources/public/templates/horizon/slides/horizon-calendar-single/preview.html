@@ -1,0 +1,57 @@
+<div class="horizon-calendar-single preview" data-ng-style="{'width': theStyle.width, 'height': theStyle.height, 'font-size': theStyle.fontsize, 'background-color': ikSlide.options.bgcolor}">
+  <div class="bg-image blur"
+       style="background-image: url('{{ ikSlide.currentImage }}')"></div>
+  <div class="container-fluid image"
+       style="background-image: url('{{ ikSlide.currentImage }}')">
+  </div>
+  <div class="container-fluid container-background">
+    <div class="date">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 87">
+        <defs>
+          <linearGradient id="cal-icon-a" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#DEDEDE"/>
+            <stop offset="100%" stop-color="#FFF"/>
+          </linearGradient>
+        </defs>
+        <g fill="none" fill-rule="evenodd">
+          <rect width="90" height="87" x="0" y="0" fill="{{ ikSlide.options.color }}" rx="2" ry="2"/>
+          <circle cx="30" cy="10" r="3" fill="rgba(255,255,255,0.9)"/>
+          <circle cx="60" cy="10" r="3" fill="rgba(255,255,255,0.9)"/>
+          <rect width="77" height="63" x="6" y="19" fill="#FFF"/>
+          <polygon fill="url(#cal-icon-a)"
+                   points="0 23 90 23 83.571 53 6.429 53"/>
+          <text fill="#000" font-family="OpenSans-Extrabold, Open Sans"
+                font-size="25" font-weight="800">
+            <tspan x="45" y="76" text-anchor="middle">OKT</tspan>
+          </text>
+          <text fill="#000" font-family="OpenSans-Extrabold, Open Sans"
+                font-size="25" font-weight="800">
+            <tspan x="45" y="47" text-anchor="middle">10.</tspan>
+          </text>
+        </g>
+      </svg>
+    </div>
+    <div class="row event event-next">
+      <div class="col-12">
+        <div class="subject">
+          <h1>Emne fusce vehicula dolor arcu sit amet blandit dolor mollis
+            nec</h1>
+        </div>
+        <div class="time">
+          <p>10:00 til 14:00</p>
+        </div>
+        <div class="location">
+          <p>Mødelokale 1</p>
+        </div>
+        <div class="description">
+          <p>Beskrivelse aptent taciti sociosqu ad litora torquent per
+            conubia nostra, per inceptos himenaeos. Maecenas dapibus, elit
+            in rutrum tristique, risus dui aliquam libero, iaculis pharetra
+            arcu enim et</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img data-ng-src="{{ ikSlide.currentLogo }}" class="logo" alt="Logo" ng-if="ikSlide.currentLogo">
+</div>

@@ -1,0 +1,50 @@
+{
+  "id": "horizon-calendar-list",
+  "theme": "horizon",
+  "type": "slide",
+  "name": "Horizon: Kalender - Liste",
+  "icon": "icon.jpg",
+  "paths": {
+    "live": "live.html",
+    "edit": "preview.html",
+    "preview": "preview.html",
+    "css": "horizon-calendar-list.css",
+    "js": "bundles/os2displayhorizontemplate/templates/js/calendarFocusSlide.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "calendar",
+  "media_type": "image",
+  "script_id": "calendar-focus",
+  "ideal_dimensions": {
+    "width": "1080",
+    "height": "1920"
+  },
+  "empty_options": {
+    "color": "#000000",
+    "bgcolor": "#007AAF",
+    "fontsize": "16",
+    "logopos": {
+      "top":"0",
+      "bottom":"auto",
+      "left":"0",
+      "right":"auto"
+    },
+    "logosize": "10%"
+  },
+  "tools": [
+    {
+      "name": "Info",
+      "template": "bundles/os2displayhorizontemplate/templates/horizon/slides/horizon-calendar-list/tools/info.html"
+    },
+    {
+      "name": "Temagrafik",
+      "id": "background-editor",
+      "template": "bundles/os2displayhorizontemplate/apps/toolsModule/horizon-background-editor.html"
+    },
+    {
+      "name": "Logo",
+      "id": "logo-editor",
+      "template": "bundles/os2displaydefaulttemplate/apps/toolsModule/fixed-logo-editor.html"
+    }
+  ]
+}

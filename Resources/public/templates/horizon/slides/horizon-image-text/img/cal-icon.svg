@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="87" viewBox="0 0 90 87">
+  <defs>
+    <linearGradient id="cal-icon-a" x1="50%" x2="50%" y1="100%" y2="0%">
+      <stop offset="0%" stop-color="#DEDEDE"/>
+      <stop offset="100%" stop-color="#FFF"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#000" d="M4,0 L85,0 C86.6568542,-7.66227013e-15 88,1.34314575 88,3 L88,84 L88,84 C88,85.6568542 86.6568542,87 85,87 L4,87 L4,87 C2.34314575,87 1,85.6568542 1,84 L1,3 L1,3 C1,1.34314575 2.34314575,3.04359188e-16 4,0 L4,0 Z M28,11 C29.6568542,11 31,9.88071187 31,8.5 C31,7.11928813 29.6568542,6 28,6 C26.3431458,6 25,7.11928813 25,8.5 C25,9.88071187 26.3431458,11 28,11 Z M64,11 C65.6568542,11 67,9.88071187 67,8.5 C67,7.11928813 65.6568542,6 64,6 C62.3431458,6 61,7.11928813 61,8.5 C61,9.88071187 62.3431458,11 64,11 Z"/>
+    <rect width="77" height="63" x="6" y="19" fill="#FFF"/>
+    <polygon fill="url(#cal-icon-a)" points="0 23 90 23 83.571 53 6.429 53"/>
+    <text fill="#000" font-family="OpenSans-Extrabold, Open Sans" font-size="25" font-weight="600">
+      <tspan x="34.563" y="76">5.</tspan>
+    </text>
+    <text fill="#000" font-family="OpenSans-Extrabold, Open Sans" font-size="25" font-weight="600">
+      <tspan x="22.527" y="47">SEP</tspan>
+    </text>
+  </g>
+</svg>

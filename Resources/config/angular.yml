@@ -1,0 +1,10 @@
+assets:
+  js_prod:
+    - bundles/os2displayhorizontemplate/assets/build/os2displayhorizontemplate.min.js
+
+modules:
+  toolsModule:
+    files:
+      - bundles/os2displayhorizontemplate/apps/toolsModule/horizon-editor.js
+
+apps:

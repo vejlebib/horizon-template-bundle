@@ -1,0 +1,69 @@
+<div class="edit-menu--background" role="banner">
+  <div class="edit-menu--background-inner">
+    <div class="edit-menu--toggle-icon" data-ng-click="close()">
+      <div class="svg-clickable">
+        <object data="bundles/os2displayadmin/images/svg/cancel.svg" type="image/svg+xml">
+          <!-- Fallback (ie8)-->
+          <img src="bundles/os2displayadmin/images/cancel.png"/>
+        </object>
+      </div>
+    </div>
+    <div class="edit-menu--background-page" data-ng-if="!step">
+      <div class="edit-menu--background-page-inner" style="display: flex; flex-direction: column; justify-content: space-around; flex-flow: row wrap;">
+        <div data-ng-repeat="region in slide.options.regions" style="flex: 1 auto; margin: 20px; max-width: 800px">
+          <h3 class="edit-menu--background-header">Rediger region {{ $index + 1 }}</h3>
+          <div class="edit-menu--background-content">
+            <div>
+              <h1>{{region.mediaIndex}}</h1>
+              <img style="width: 200px" ng-src="{{ slide.media[region.mediaIndex].urls.default_landscape_small }}" ng-if="region.mediaIndex >= 0">
+            </div>
+            <button class="edit-menu--background-button"
+                    data-ng-click="backgroundPicker($index)">
+              Vælg billede
+            </button>
+
+            <label class="edit-menu-background--label">Vælg temafarve</label>
+            <input colorpicker="hex" class="form-slide-background-background-color edit-menu--background-form-element"
+                   type="text" placeholder="e.g. #000" ng-model="region.color"
+                   data-ng-style="{'background-color': region.color}">
+
+            <label class="edit-menu-background--label">Vælg overskrift</label>
+            <input type="text" ng-model="region.title">
+
+            <label class="edit-menu-background--label">Vælg text</label>
+            <textarea ng-model="region.text" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="edit-menu--background-page" data-ng-if="step">
+      <div class="edit-menu--background-image-back" data-ng-click="back()">
+        <div class="svg-clickable">
+          <object data="bundles/os2displayadmin/images/svg/back.svg" type="image/svg+xml">
+            <!-- Fallback (ie8)-->
+            <img src="bundles/os2displayadmin/images/back.png"/>
+          </object>
+        </div>
+        <h2 data-ng-click="back()">Tilbage</h2>
+      </div>
+      <div class="edit-menu--background-page-inner" data-ng-if="step === 'background-picker'">
+        <h3 class="edit-menu--background-header">Vælg medie</h3>
+        <div class="edit-menu--background-content">
+          <button class="edit-menu--background-button" data-ng-click="pickFromMedia()">Vælg fil fra medier</button>
+          <button class="edit-menu--background-button" data-ng-click="pickFromComputer()">Vælg fil fra computer</button>
+        </div>
+      </div>
+      <div class="edit-menu--background-page-inner" data-ng-if="step === 'pick-from-media'">
+        <h3 class="edit-menu--background-header">Vælg fil fra mediearkiv</h3>
+        <ik-media-overview ik-media-type="'image'" ik-auto-search="false" ik-hide-filters="true"
+                           ik-selected-media="selectedMedia"></ik-media-overview>
+      </div>
+      <div class="edit-menu--background-page-inner" data-ng-if="step === 'pick-from-computer'">
+        <h3 class="edit-menu--background-header">Vælg fil fra computer</h3>
+        <div class="edit-menu--background-content-alternate">
+          <ik-media-upload ik-upload-type="'image'"></ik-media-upload>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
