@@ -1,0 +1,32 @@
+<div class="horizon-image-text">
+  <div class="bg-image blur"
+       style="background-image: url('{{ ikSlide.media[ikSlide.options.regions[0].mediaIndex].image }}')"></div>
+
+  <div class="container-fluid">
+    <div class="row image">
+      <div class="col">
+        <div class="front-image"
+             style="background-image: url('{{ ikSlide.media[ikSlide.options.regions[0].mediaIndex].image }}')">
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 40"
+             class="arrow arrow-up">
+          <polygon fill="#FFF" fill-rule="evenodd" points="0 40 485.992 0 960 40"/>
+        </svg>
+      </div>
+    </div>
+    <div class="row text">
+      <div class="col">
+        <div class="subject">
+          <h1>{{ ikSlide.options.regions[0].title ? ikSlide.options.regions[0].title : "&nbsp;" }}</h1>
+        </div>
+        <div class="line"
+             ng-style="{'background-color': ikSlide.options.regions[0].color}"></div>
+        <div class="description">
+          <p>{{ ikSlide.options.regions[0].text ? ikSlide.options.regions[0].text : "&nbsp;" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img data-ng-src="{{ ikSlide.currentLogo }}" class="logo" alt="Logo" ng-if="ikSlide.currentLogo">
+</div>

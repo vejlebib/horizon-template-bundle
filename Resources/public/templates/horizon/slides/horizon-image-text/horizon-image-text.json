@@ -1,0 +1,55 @@
+{
+  "id": "horizon-image-text",
+  "theme": "horizon",
+  "type": "slide",
+  "name": "Horizon: Billede/tekst",
+  "icon": "icon.jpg",
+  "paths": {
+    "live": "live.html",
+    "edit": "preview.html",
+    "preview": "preview.html",
+    "css": "horizon-image-text.css",
+    "js": "bundles/os2displayhorizontemplate/templates/js/baseSlide.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "base",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+    "fontsize": "16",
+    "regions": [
+      {
+        "headline": "",
+        "text": "",
+        "color": "#007AAF",
+        "mediaIndex": null
+      }
+    ],
+    "logopos": {
+      "top":"0",
+      "bottom":"auto",
+      "left":"0",
+      "right":"auto"
+    },
+    "logosize": "10%"
+  },
+  "tools": [
+    {
+      "name": "Info",
+      "template": "bundles/os2displayhorizontemplate/templates/horizon/slides/horizon-image-text/tools/info.html"
+    },
+    {
+      "name": "Indhold",
+      "id": "horizon-editor"
+    },
+    {
+      "name": "Logo",
+      "id": "logo-editor",
+      "template": "bundles/os2displayhorizontemplate/apps/toolsModule/horizon-logo-editor.html"
+    }
+  ]
+}

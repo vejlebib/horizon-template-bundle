@@ -1,3 +1,0 @@
-os2_display_horizon_template_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: Os2DisplayHorizonTemplateBundle:Default:index }
