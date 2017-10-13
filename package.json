@@ -1,6 +1,6 @@
 {
-  "name": "default-template-bundle",
-  "description": "Default templates",
+  "name": "horizon-template-bundle",
+  "description": "Horizon templates",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
