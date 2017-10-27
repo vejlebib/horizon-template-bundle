@@ -9,7 +9,7 @@
     "edit": "preview.html",
     "preview": "preview.html",
     "css": "horizon-image-text.css",
-    "js": "bundles/os2displayhorizontemplate/templates/js/baseSlide.js"
+    "js": "bundles/os2displaydefaulttemplate/templates/js/baseSlide.js"
   },
   "orientation": "landscape",
   "slide_type": "base",
