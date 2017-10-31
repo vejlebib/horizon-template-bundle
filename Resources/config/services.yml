@@ -1,4 +1,4 @@
 services:
 #    os2_display_horizon_template.example:
-#        class: Os2Display\HorizonTemplateBundle\Example
+#        class: Itk\HorizonTemplateBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]

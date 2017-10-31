@@ -40,7 +40,7 @@
   "tools": [
     {
       "name": "Info",
-      "template": "bundles/os2displayhorizontemplate/templates/horizon/slides/horizon-image-text/tools/info.html"
+      "template": "bundles/itkhorizontemplate/templates/horizon/slides/horizon-image-text/tools/info.html"
     },
     {
       "name": "Indhold",
@@ -49,7 +49,7 @@
     {
       "name": "Logo",
       "id": "logo-editor",
-      "template": "bundles/os2displayhorizontemplate/apps/toolsModule/horizon-logo-editor.html"
+      "template": "bundles/itkhorizontemplate/apps/toolsModule/horizon-logo-editor.html"
     }
   ]
 }

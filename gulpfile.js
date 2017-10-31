@@ -93,7 +93,7 @@ var adminJsPath = (function () {
   });
 
   return jsFiles.map(function (file) {
-    return 'Resources/public/' + file.split('bundles/os2displayhorizontemplate/')[1];
+    return 'Resources/public/' + file.split('bundles/itkhorizontemplate/')[1];
   });
 }());
 
@@ -111,7 +111,7 @@ gulp.task('jshint', 'Runs JSHint on js', function () {
  */
 gulp.task('js', 'Build all custom js files into one minified js file.', function () {
     return gulp.src(adminJsPath)
-    .pipe(concat('os2displayhorizontemplate.js'))
+    .pipe(concat('itkhorizontemplate.js'))
     .pipe(ngAnnotate())
     .pipe(uglify())
     .pipe(rename({extname: ".min.js"}))
