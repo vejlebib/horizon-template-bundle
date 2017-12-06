@@ -45,6 +45,10 @@
       "name": "Logo",
       "id": "logo-editor",
       "template": "bundles/os2displaydefaulttemplate/apps/toolsModule/fixed-logo-editor.html"
+    },
+    {
+      "name": "Kalender",
+      "id": "itk-email-list-tool"
     }
   ]
 }

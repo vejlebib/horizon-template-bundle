@@ -20,8 +20,6 @@ angular.module('toolsModule').directive('horizonEditor', [
         scope.backgroundPicker = function backgroundPicker(pickedIndex) {
           index = pickedIndex;
 
-          console.log(scope.slide.media);
-
           scope.step = 'background-picker';
         };
 
