@@ -80,6 +80,7 @@ if (!window.slideFunctions['calendar-all']) {
 
             var expression = /https:\/\/(www\.)?[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
             var regex = new RegExp(expression);
+
             var urlMatches = booking.body.match(regex);
 
             if (urlMatches) {
@@ -92,7 +93,7 @@ if (!window.slideFunctions['calendar-all']) {
               }
             }
 
-            if (startDate.getHours() === endDate.getHours()) {
+            if (booking.is_all_day_event || startDate.getHours() === endDate.getHours()) {
               booking.fullDay = true;
             }
 

@@ -22,10 +22,11 @@
         <div class="row event event-future" data-ng-repeat="event in ikSlide.futureEvents | limitTo: 4" >
           <div class="col-12">
             <div class="time">
-              <p>10:00 til 14:00</p>
+              <p ng-if="event.fullDay">Hele dagen</p>
+              <p ng-if="!event.fullDay">{{ event.start_time * 1000 | date:'HH:mm' }} - {{ event.end_time * 1000 | date:'HH:mm' }}</p>
             </div>
             <div class="location">
-              <p>Mødelokale 1</p>
+              <p>{{ event.location }}</p>
             </div>
           </div>
           <div class="col-2 date">

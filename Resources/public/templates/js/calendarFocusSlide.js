@@ -93,7 +93,7 @@ if (!window.slideFunctions['calendar-focus']) {
               }
             }
 
-            if (startDate.getHours() === endDate.getHours()) {
+            if (booking.is_all_day_event || startDate.getHours() === endDate.getHours()) {
               booking.fullDay = true;
             }
 
