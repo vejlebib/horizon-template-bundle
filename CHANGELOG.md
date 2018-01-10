@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## In develop
+
+* Updated npm packages.
+
 ## 1.0.3
 
 * Added tool to pick resources.
