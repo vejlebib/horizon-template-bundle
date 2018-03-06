@@ -24,14 +24,7 @@
     "bgcolor": "#DCDCDC",
     "title": "",
     "description": "",
-    "fontsize": "16",
-    "logopos": {
-      "top":"0",
-      "bottom":"auto",
-      "left":"0",
-      "right":"auto"
-    },
-    "logosize": "10%"
+    "fontsize": "16"
   },
   "tools": [
     {

@@ -22,14 +22,7 @@
   "empty_options": {
     "color": "#000000",
     "bgcolor": "#007AAF",
-    "fontsize": "16",
-    "logopos": {
-      "top":"0",
-      "bottom":"auto",
-      "left":"0",
-      "right":"auto"
-    },
-    "logosize": "10%"
+    "fontsize": "16"
   },
   "tools": [
     {
