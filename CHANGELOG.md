@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## In develop
+
+## 1.0.4
+
+* Fixed issues with logo tool and positioning.
+* Updated npm packages.
+
 ## 1.0.3
 
 * Added tool to pick resources.

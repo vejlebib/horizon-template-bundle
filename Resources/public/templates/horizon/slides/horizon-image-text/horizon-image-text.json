@@ -28,14 +28,7 @@
         "color": "#007AAF",
         "mediaIndex": null
       }
-    ],
-    "logopos": {
-      "top":"0",
-      "bottom":"auto",
-      "left":"0",
-      "right":"auto"
-    },
-    "logosize": "10%"
+    ]
   },
   "tools": [
     {
@@ -49,7 +42,7 @@
     {
       "name": "Logo",
       "id": "logo-editor",
-      "template": "bundles/itkhorizontemplate/apps/toolsModule/horizon-logo-editor.html"
+      "template": "bundles/os2displaydefaulttemplate/apps/toolsModule/fixed-logo-editor.html"
     }
   ]
 }
