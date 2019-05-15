@@ -1,6 +1,8 @@
 # CHANGELOG
 
-## In develop
+## 2.0.0
+
+* Renamed to Os2DisplayHorizonTemplateBundle.
 
 ## 1.0.4
 
