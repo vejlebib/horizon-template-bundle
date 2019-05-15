@@ -1,10 +1,10 @@
 assets:
   js_prod:
-    - bundles/itkhorizontemplate/assets/build/itkhorizontemplate.min.js
+    - bundles/os2displayhorizontemplate/assets/build/os2displayhorizontemplate.min.js
 
 modules:
   toolsModule:
     files:
-      - bundles/itkhorizontemplate/apps/toolsModule/horizon-editor.js
+      - bundles/os2displayhorizontemplate/apps/toolsModule/horizon-editor.js
 
 apps:

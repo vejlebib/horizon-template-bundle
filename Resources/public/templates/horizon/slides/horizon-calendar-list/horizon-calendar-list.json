@@ -9,7 +9,7 @@
     "edit": "preview.html",
     "preview": "preview.html",
     "css": "horizon-calendar-list.css",
-    "js": "bundles/itkhorizontemplate/templates/js/calendarFocusSlide.js"
+    "js": "bundles/os2displayhorizontemplate/templates/js/calendarFocusSlide.js"
   },
   "orientation": "landscape",
   "slide_type": "calendar",
@@ -27,12 +27,12 @@
   "tools": [
     {
       "name": "Info",
-      "template": "bundles/itkhorizontemplate/templates/horizon/slides/horizon-calendar-list/tools/info.html"
+      "template": "bundles/os2displayhorizontemplate/templates/horizon/slides/horizon-calendar-list/tools/info.html"
     },
     {
       "name": "Temagrafik",
       "id": "background-editor",
-      "template": "bundles/itkhorizontemplate/apps/toolsModule/horizon-background-editor.html"
+      "template": "bundles/os2displayhorizontemplate/apps/toolsModule/horizon-background-editor.html"
     },
     {
       "name": "Logo",
