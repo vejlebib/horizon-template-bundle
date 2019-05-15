@@ -1,4 +1,4 @@
-var gulp = require('gulp-help')(require('gulp'));
+var gulp = require('gulp');
 
 // Plugins.
 var jshint = require('gulp-jshint');
@@ -42,7 +42,7 @@ var templates = {
 /**
  * Process SCSS using libsass
  */
-gulp.task('sass', 'Compile the sass for each templates into minified css files.', function () {
+gulp.task('sass', function (done) {
   'use strict';
 
   // Iterates through the screen and slide templates defined in templates variable, and compresses each one.
@@ -64,6 +64,8 @@ gulp.task('sass', 'Compile the sass for each templates into minified css files.'
       });
     }
   }
+
+  done();
 });
 
 // We only want to process our own non-processed JavaScript files.
@@ -93,14 +95,14 @@ var adminJsPath = (function () {
   });
 
   return jsFiles.map(function (file) {
-    return 'Resources/public/' + file.split('bundles/itkhorizontemplate/')[1];
+    return 'Resources/public/' + file.split('bundles/os2displayhorizontemplate/')[1];
   });
 }());
 
 /**
  * Run Javascript through JSHint.
  */
-gulp.task('jshint', 'Runs JSHint on js', function () {
+gulp.task('jshint', function () {
   return gulp.src(adminJsPath)
   .pipe(jshint())
   .pipe(jshint.reporter(stylish));
@@ -109,9 +111,9 @@ gulp.task('jshint', 'Runs JSHint on js', function () {
 /**
  * Build single app.js file.
  */
-gulp.task('js', 'Build all custom js files into one minified js file.', function () {
+gulp.task('js', function () {
     return gulp.src(adminJsPath)
-    .pipe(concat('itkhorizontemplate.js'))
+    .pipe(concat('os2displayhorizontemplate.js'))
     .pipe(ngAnnotate())
     .pipe(uglify())
     .pipe(rename({extname: ".min.js"}))
@@ -123,8 +125,10 @@ gulp.task('js', 'Build all custom js files into one minified js file.', function
 /**
  * Build single app.js file.
  */
-gulp.task('js-src', 'Report all source files for "js" task.', function () {
+gulp.task('js-src', function (done) {
   adminJsPath.forEach(function (path) {
     process.stdout.write(path + '\n');
   });
+
+  done();
 });

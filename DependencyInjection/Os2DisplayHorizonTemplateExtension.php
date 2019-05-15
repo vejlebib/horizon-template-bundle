@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\HorizonTemplateBundle\DependencyInjection;
+namespace Os2Display\HorizonTemplateBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Os2Display\CoreBundle\DependencyInjection\Os2DisplayBaseExtension;
@@ -10,7 +10,7 @@ use Os2Display\CoreBundle\DependencyInjection\Os2DisplayBaseExtension;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class ItkHorizonTemplateExtension extends Os2DisplayBaseExtension
+class Os2DisplayHorizonTemplateExtension extends Os2DisplayBaseExtension
 {
     /**
      * {@inheritdoc}

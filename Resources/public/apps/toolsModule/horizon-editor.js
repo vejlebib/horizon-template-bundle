@@ -152,7 +152,7 @@ angular.module('toolsModule').directive('horizonEditor', [
         });
 
       },
-      templateUrl: '/bundles/itkhorizontemplate/apps/toolsModule/horizon-editor.html'
+      templateUrl: '/bundles/os2displayhorizontemplate/apps/toolsModule/horizon-editor.html'
     };
   }
 ]);

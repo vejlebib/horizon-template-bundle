@@ -33,7 +33,7 @@
   "tools": [
     {
       "name": "Info",
-      "template": "bundles/itkhorizontemplate/templates/horizon/slides/horizon-image-text/tools/info.html"
+      "template": "bundles/os2displayhorizontemplate/templates/horizon/slides/horizon-image-text/tools/info.html"
     },
     {
       "name": "Indhold",

@@ -1,5 +1,5 @@
 {
-    "name": "itk-os2display/horizon-template-bundle",
+    "name": "os2display/horizon-template-bundle",
     "description": "Os2Display Horizon templates",
     "type": "symfony-bundle",
     "require": {
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Itk\\HorizonTemplateBundle\\": ""
+            "Os2Display\\HorizonTemplateBundle\\": ""
         }
     }
 }

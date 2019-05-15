@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\HorizonTemplateBundle\DependencyInjection;
+namespace Os2Display\HorizonTemplateBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
