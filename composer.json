@@ -3,7 +3,7 @@
     "description": "Os2Display Horizon templates",
     "type": "symfony-bundle",
     "require": {
-        "os2display/core-bundle": "^1.0",
+        "os2display/core-bundle": "^2.0",
         "twig/extensions": "^1.0"
     },
     "autoload": {
