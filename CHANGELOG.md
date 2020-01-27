@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.0
+
+* Merged https://github.com/os2display/horizon-template-bundle/pull/3 - Update dependency on core-bundle.
+
 ## 2.0.0
 
 * Renamed to Os2DisplayHorizonTemplateBundle.
